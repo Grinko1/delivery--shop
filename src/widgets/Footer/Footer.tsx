@@ -14,22 +14,18 @@ interface FooterProps {
 export const Footer = memo((props: FooterProps) => {
   return (
     <footer className={styles.container}>
-      <Logo />
+      <Logo color="white" />
 
       <div className={styles.content}>
         <div className={styles['footer-menu_left-block']}>
           <div className={styles['footer-menu']}>
-            <Topic title="Каталог медикаментов" list={CATALOG_OF_MEDICINES} />
+            <Topic title="Каталог" list={CATALOG_OF_MEDICINES} />
             <Topic title="Помощь" list={HELP} />
             <Topic title="Документация" list={DOCUMENTATION} />
           </div>
 
           <div className={styles['footer-menu_legal-information']}>
-            <span className={styles['footer-menu_legal-information-warning']}>
-              Имеются противопоказания. Необходима консультация специалиста
-            </span>
-
-            <span className={styles['footer-menu_legal-information-data']}>© 2023 Аптека28</span>
+            <span className={styles['footer-menu_legal-information-data']}>© 2023 МАРКЕТ28</span>
 
             <span className={styles['footer-menu_legal-information-data']}>ИП «данные ИП»</span>
 

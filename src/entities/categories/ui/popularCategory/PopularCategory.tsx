@@ -23,10 +23,7 @@ export const PopularCategory = memo((props: PopularCategoryProps) => {
           <span className={classNames(styles['block-title'], {}, [styles['block-title_first']])}>Бакалея</span>
         </div>
         <div className={classNames(styles.second, {}, [styles['horizontal-block']])}>
-          <CustomImage
-            src={'https://www.san-victor.com.ua/upload/images/blog/10-faktov-o-vode.jpg'}
-            alt="VitaminsCoverImage"
-          />
+          <CustomImage src={'https://s0.rbk.ru/v6_top_pics/media/img/4/89/756188213182894.jpg'} alt="VitaminsCoverImage" />
           <span className={classNames(styles['block-title'], {}, [styles['block-title_second']])}>Вода и напитки</span>
         </div>
 

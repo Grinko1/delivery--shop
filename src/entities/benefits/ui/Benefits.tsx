@@ -1,34 +1,31 @@
 import styles from './styles.module.scss';
-import CircleIcon from './CheckCircleIcon.svg';
-import { Icon } from 'shared/ui/Icon/Icon';
 
 const Benefits = () => (
   <>
-    <p className={styles.tagline}>
-      Равным образом, внедрение современных методик создаёт необходимость включения в производственный план целого ряда
-      внеочередных мероприятий с учётом комплекса благоприятных перспектив.
-    </p>
+    <h3 className={styles.tagline}>
+      Ваши любимые товары всегда под рукой.
+      <br />
+      Доставим меньше, чем за час
+    </h3>
 
     <div className={styles.benefits}>
       <div className={styles.benefit}>
-        <Icon Svg={CircleIcon} className={styles.Img} />
-
-        <p>Аптека28 - всегда рядом.</p>
+        <p>
+          Очень просто заказать! Наша команда работает для вашего удобства. Заказать необходимый перечень товаров можно
+          везде, где работает интернет, не вставая с любимого кресла.
+        </p>
       </div>
       <div className={styles.benefit}>
-        <Icon Svg={CircleIcon} className={styles.Img} />
-
-        <p>Программа лояльности Гарантия лучшей цены.</p>
+        <p>
+          Контроль качества. Мы ежедневно работаем над увеличением ассортимента нашей продукции. Наши специалисты постоянно в
+          поисках вкусных и полезных продуктов питания.
+        </p>
       </div>
       <div className={styles.benefit}>
-        <Icon Svg={CircleIcon} className={styles.Img} />
-
-        <p>Заказать доставку домой можно сразу на сайте.</p>
-      </div>
-      <div className={styles.benefit}>
-        <Icon Svg={CircleIcon} className={styles.Img} />
-
-        <p>Попробуйте уже сейчас воспользуйтесь поиском.</p>
+        <p>
+          Заказать доставку домой можно сразу на сайте. Не нужно тратить время на дорогу и очереди - выберите любимые
+          продукты, оформите заказ и ожидайте курьера. Доставка в течении часа!
+        </p>
       </div>
     </div>
   </>

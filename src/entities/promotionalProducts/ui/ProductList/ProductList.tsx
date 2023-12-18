@@ -9,6 +9,7 @@ import {
   getPromoIsLoading,
   getPromoProducts
 } from 'entities/promotionalProducts/model/selectors/getPromotionalProduct';
+import { ProductItem } from '../ProductItem/ProductItem';
 
 interface ProductListProps {
   className?: string;
@@ -30,6 +31,11 @@ export const ProductList = memo((props: ProductListProps) => {
   if (isLoading) {
     return <h3>Loadinh...</h3>;
   }
-  console.log(products);
-  return <div className={classNames(cls.ProductList, {}, [className])}>Product List</div>;
+  return (
+    <div className={classNames(cls.ProductList, {}, [className])}>
+      {products?.map((item) => (
+        <ProductItem product={item} key={item.id} />
+      ))}
+    </div>
+  );
 });

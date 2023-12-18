@@ -1,15 +1,11 @@
-export interface Product {
-  id: number;
-  name: string;
-  category: string;
-  title: string;
-  price: number;
-  img: string;
-  weigth: string;
+import { type Product } from 'entities/products/model/types/productsSchema';
+
+export interface ProductPromo extends Product {
+  newPrice: number;
 }
 
 export interface PromotionalSchema {
-  products: Product[] | undefined;
+  products: ProductPromo[] | undefined;
   isLoading: boolean;
   error?: string;
 }

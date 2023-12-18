@@ -7,10 +7,14 @@ import {
   type CombinedState
 } from '@reduxjs/toolkit';
 import { type AxiosInstance } from 'axios';
+import { type CategoriesSchema } from 'entities/categories';
+import { type ProductsSchema } from 'entities/products';
 import { type PromotionalSchema } from 'entities/promotionalProducts';
 
 export interface StateSchema {
   promotional: PromotionalSchema;
+  categories: CategoriesSchema;
+  products: ProductsSchema;
   // counter: CounterSchema;
   // user: UserSchema;
   // ui: UISchema;

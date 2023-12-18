@@ -1,7 +1,6 @@
 import { type PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { type Product, type PromotionalSchema } from '../types/promotional';
+import { type ProductPromo, type PromotionalSchema } from '../types/promotional';
 import { fetchPromotionalProduct } from '../services/fetchPromotionalProduct';
-// import { type Profile, type ProfileSchema } from '../types/profile';
 
 const initialState: PromotionalSchema = {
   isLoading: false,
@@ -18,7 +17,7 @@ export const promotionalSlice = createSlice({
       state.isLoading = true;
       state.error = undefined;
     });
-    builder.addCase(fetchPromotionalProduct.fulfilled, (state, action: PayloadAction<Product[]>) => {
+    builder.addCase(fetchPromotionalProduct.fulfilled, (state, action: PayloadAction<ProductPromo[]>) => {
       state.isLoading = false;
       state.products = action.payload;
     });

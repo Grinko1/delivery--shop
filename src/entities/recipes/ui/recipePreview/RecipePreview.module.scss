@@ -1,0 +1,42 @@
+.RecipePreview {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 90px auto;
+  .header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .hr {
+    margin: 25px 0;
+  }
+  .recipe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 350px;
+      border-radius: 50%;
+    }
+    .text {
+      h3 {
+        text-align: center;
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 10px;
+        .reedMore {
+          color: green;
+          font-size: 17px;
+          padding: 3px 15px;
+          border: 1px solid green;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

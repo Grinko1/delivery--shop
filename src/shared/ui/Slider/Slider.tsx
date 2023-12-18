@@ -38,7 +38,7 @@ export const Slider = ({ images, widthPercent = 100 }: SliderProps) => {
       <div className="containerSlider" style={sliderWidth}>
         {images.map((img, index) => {
           return (
-            <div key={img} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
+            <div key={index} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
               <img src={img} />
             </div>
           );

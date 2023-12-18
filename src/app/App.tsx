@@ -8,28 +8,22 @@ import { Footer } from 'widgets/Footer/Footer';
 import AboutPage from 'pages/AboutPage';
 import { Help } from 'pages/Help/Help';
 import { ArticleDetails } from 'entities/articles/ui/articleList/ArticleDetails';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { getUserInited, userActions } from 'entities/User';
+import { CatalogPage } from 'pages/CatalogPage/ui/CatalogPage';
+import { ProductsPage } from 'pages/ProductsPage';
 
 const App = () => {
-  // const dispatch = useDispatch();
-  // const inited = useSelector(getUserInited);
-  // useEffect(() => {
-  //   dispatch(userActions.initAuthData());
-  // }, [dispatch]);
-
   return (
     <div className={classNames('app', {}, [])}>
       <Suspense fallback="">
         <Header />
-        <div className="content-page">
-          <Routes>
-            <Route path="*" element={<MainPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/help" element={<Help />} />
-            <Route path="article/:id" element={<ArticleDetails />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="*" element={<MainPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/article/:id" element={<ArticleDetails />} />
+          <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/products/:title" element={<ProductsPage />} />
+        </Routes>
         <Footer />
       </Suspense>
     </div>

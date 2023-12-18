@@ -24,7 +24,6 @@ export function createReducerManager (initialReducers: ReducersMapObject<StateSc
       if (keysToRemove.length > 0) {
         state = { ...state };
         for (const key of keysToRemove) {
-          // @ts-expect-error sdfsd
           delete state[key];
         }
         keysToRemove = [];
@@ -55,7 +54,6 @@ export function createReducerManager (initialReducers: ReducersMapObject<StateSc
       }
 
       // Remove it from the reducer mapping
-      // @ts-expect-error sdfsd
       delete reducers[key];
       mountedReducers[key] = false;
 

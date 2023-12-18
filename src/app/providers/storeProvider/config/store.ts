@@ -4,11 +4,15 @@ import { type StateSchema } from './StateSchema';
 import { createReducerManager } from './reducerManager';
 import { $api } from 'shared/api/api';
 import { promotionalReducer } from 'entities/promotionalProducts';
+import { categoriesReducer } from 'entities/categories';
+import { productsReducer } from 'entities/products';
 
 export function createReduxStore (initialState?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) {
   const rootReducer: ReducersMapObject<StateSchema> = {
     ...asyncReducers,
-    promotional: promotionalReducer
+    promotional: promotionalReducer,
+    categories: categoriesReducer,
+    products: productsReducer
     // counter: counterReducer,
     // user: userReducer,
     // ui: uiReducer

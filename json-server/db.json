@@ -45,11 +45,170 @@
       "userId": "2"
     }
   ],
+  "categories": [
+    {
+      "id": 1,
+      "img": "https://kazanreporter.ru/uploads/pictures/572b1c6fcc10f.jpg",
+      "title": "Бакалея",
+      "link": "bacaley",
+      "subcategory": [
+        {
+          "id": 6,
+          "title": "Крупы",
+          "link": "cereals"
+        },
+        {
+          "id": 7,
+          "title": "Макароны",
+          "link": "pasta"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "https://s0.rbk.ru/v6_top_pics/media/img/4/89/756188213182894.jpg",
+      "title": "Вода и напитки",
+      "link": "drinkables",
+      "subcategory": [
+        {
+          "id": 8,
+          "title": "Вода",
+          "link": "wather"
+        },
+        {
+          "id": 9,
+          "title": "Сок",
+          "link": "juice"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "https://ss.sport-express.ru/userfiles/materials/181/1812257/volga.jpg",
+      "title": "Овощи и фрукты",
+      "link": "vegetables",
+      "subcategory": [
+        {
+          "id": 10,
+          "title": "Овощи",
+          "link": "vagetables"
+        },
+        {
+          "id": 11,
+          "title": "Фрукты",
+          "link": "fruits"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "https://www.holcom.ru/img/1467249475422_bulletin.jpg",
+      "title": "Заморозка",
+      "link": "frost",
+      "subcategory": [
+        {
+          "id": 12,
+          "title": "Овощи",
+          "link": "frost-vegetables"
+        },
+        {
+          "id": 13,
+          "title": "Мясо",
+          "link": "frost-meat"
+        },
+        {
+          "id": 16,
+          "title": "Рыба",
+          "link": "frost-fish"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "img": "https://www.torrefacto.ru/upload/uf/bdb/bdbdeef87ed237d79d7e70ee1f9974d8.jpg",
+      "title": "Чай и кофе",
+      "link": "beverages",
+      "subcategory": [
+        {
+          "id": 14,
+          "title": "Чай",
+          "link": "tea"
+        },
+        {
+          "id": 15,
+          "title": "Кофе",
+          "link": "coffee"
+        }
+      ]
+    }
+  ],
+  "productsSale": [
+    {
+      "id": 1,
+      "name": "Сок Simply Orange",
+      "categoryId": 9,
+      "title": "title title",
+      "price": 231,
+      "img": "https://target.scene7.com/is/image/Target/GUEST_2b7f75ea-fbb8-4767-8b1f-6bb809bfe214?wid=488&hei=488&fmt=pjpeg",
+      "weigth": "1л",
+      "newPrice": 190
+    },
+    {
+      "id": 2,
+      "name": "МАКАРОНЫ МАКФА",
+      "categoryId": 7,
+      "title": "title title",
+      "price": 90,
+      "img": "https://static.insales-cdn.com/r/8x2MT2VQehU/rs:fit:600:600:1/plain/images/products/1/5244/766432380/large_import_files_41_4186fb09-6bd4-4e8f-a2d3-ccb9ea4f52b5_58567daa-38a4-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "400г",
+      "newPrice": 70
+    },
+    {
+      "id": 3,
+      "name": "Кофе арабика",
+      "categoryId": 15,
+      "title": "title title",
+      "price": 700,
+      "img": "https://static.insales-cdn.com/r/jrMuNhNVx68/rs:fit:600:600:1/plain/images/products/1/1888/766412640/large_import_files_9c_9c03edb4-07f4-11e8-a9a4-002590c824e2_525702f2-f3ab-11ed-9dfa-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "250гр",
+      "newPrice": 400
+    },
+    {
+      "id": 4,
+      "name": "Рулька свинная ",
+      "categoryId": 13,
+      "title": "title title",
+      "price": 550,
+      "img": "https://static.insales-cdn.com/r/qmSow8qaYog/rs:fit:600:600:1/plain/images/products/1/2729/766413481/large_import_files_57_570e4356-1ac4-48df-8fd2-26c7887e9c11_1aa6ab75-38a2-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг",
+      "newPrice": 400
+    },
+    {
+      "id": 5,
+      "name": "ВОДА МИНЕРАЛЬНАЯ",
+      "categoryId": 8,
+      "title": "title title",
+      "price": 60,
+      "img": "https://static.insales-cdn.com/r/krk49WSPuU8/rs:fit:600:600:1/plain/images/products/1/6221/766425165/large_import_files_ad_adef283e-298c-43c0-adc3-2d05fe9fd995_2044204d-247b-11ee-9dff-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1л",
+      "newPrice": 49
+    },
+    {
+      "id": 6,
+      "name": "ПОМИДОРЫ ЧЕРРИ",
+      "categoryId": 10,
+      "title": "title title",
+      "price": 300,
+      "img": "https://static.insales-cdn.com/r/2OEiwecwDyk/rs:fit:600:600:1/plain/images/products/1/5886/766424830/large_import_files_1f_1f04ee7a-e04c-4ec4-ac61-352efbf49179_dbe59a15-8014-11ed-9dee-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг",
+      "newPrice": 250
+    }
+  ],
   "products": [
     {
       "id": 1,
-      "name": "Сок",
-      "category": "category1",
+      "name": "Сок Simply Orange",
+      "categoryId": 9,
       "title": "title title",
       "price": 231,
       "img": "https://target.scene7.com/is/image/Target/GUEST_2b7f75ea-fbb8-4767-8b1f-6bb809bfe214?wid=488&hei=488&fmt=pjpeg",
@@ -57,21 +216,48 @@
     },
     {
       "id": 2,
-      "name": "Сок",
-      "category": "category1",
+      "name": "МАКАРОНЫ МАКФА",
+      "categoryId": 7,
       "title": "title title",
-      "price": 231,
-      "img": "https://target.scene7.com/is/image/Target/GUEST_2b7f75ea-fbb8-4767-8b1f-6bb809bfe214?wid=488&hei=488&fmt=pjpeg",
-      "weigth": "1л"
+      "price": 90,
+      "img": "https://static.insales-cdn.com/r/8x2MT2VQehU/rs:fit:600:600:1/plain/images/products/1/5244/766432380/large_import_files_41_4186fb09-6bd4-4e8f-a2d3-ccb9ea4f52b5_58567daa-38a4-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "400г"
     },
     {
       "id": 3,
-      "name": "Сок",
-      "category": "category1",
+      "name": "Кофе арабика",
+      "categoryId": 15,
       "title": "title title",
-      "price": 231,
-      "img": "https://target.scene7.com/is/image/Target/GUEST_2b7f75ea-fbb8-4767-8b1f-6bb809bfe214?wid=488&hei=488&fmt=pjpeg",
+      "price": 700,
+      "img": "https://static.insales-cdn.com/r/jrMuNhNVx68/rs:fit:600:600:1/plain/images/products/1/1888/766412640/large_import_files_9c_9c03edb4-07f4-11e8-a9a4-002590c824e2_525702f2-f3ab-11ed-9dfa-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "250гр"
+    },
+    {
+      "id": 4,
+      "name": "Рулька свинная ",
+      "categoryId": 13,
+      "title": "title title",
+      "price": 550,
+      "img": "https://static.insales-cdn.com/r/qmSow8qaYog/rs:fit:600:600:1/plain/images/products/1/2729/766413481/large_import_files_57_570e4356-1ac4-48df-8fd2-26c7887e9c11_1aa6ab75-38a2-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг"
+    },
+    {
+      "id": 5,
+      "name": "ВОДА МИНЕРАЛЬНАЯ",
+      "categoryId": 8,
+      "title": "title title",
+      "price": 60,
+      "img": "https://static.insales-cdn.com/r/krk49WSPuU8/rs:fit:600:600:1/plain/images/products/1/6221/766425165/large_import_files_ad_adef283e-298c-43c0-adc3-2d05fe9fd995_2044204d-247b-11ee-9dff-0cc47aeb3cd9.jpeg@webp",
       "weigth": "1л"
+    },
+    {
+      "id": 6,
+      "name": "ПОМИДОРЫ ЧЕРРИ",
+      "categoryId": 10,
+      "title": "title title",
+      "price": 300,
+      "img": "https://static.insales-cdn.com/r/2OEiwecwDyk/rs:fit:600:600:1/plain/images/products/1/5886/766424830/large_import_files_1f_1f04ee7a-e04c-4ec4-ac61-352efbf49179_dbe59a15-8014-11ed-9dee-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг"
     }
   ],
   "articles": [
