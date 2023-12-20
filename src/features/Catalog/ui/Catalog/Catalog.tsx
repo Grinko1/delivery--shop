@@ -2,12 +2,11 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Catalog.module.scss';
 import { memo, useEffect } from 'react';
 import { CategoriesList } from 'entities/categories';
-import { PromotionalProduct } from 'entities/promotionalProducts';
-import { Products } from 'entities/products';
+import { Products, PromotionalProduct, getPopularProducts } from 'entities/products';
 import { useSelector } from 'react-redux';
-import { getPopularProducts, getProductsError, getProductsIsLoading } from 'entities/products/model/selectors/getProducts';
+import { getProductsError, getProductsIsLoading } from 'entities/products/model/selectors/getProducts/getProducts';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { fetchPopularProducts } from 'entities/products/model/services/fetchPopularProducts';
+import { fetchPopularProducts } from 'entities/products/model/services/popularProducts/fetchPopularProducts';
 
 interface CatalogProps {
   className?: string;

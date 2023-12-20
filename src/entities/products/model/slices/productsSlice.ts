@@ -1,7 +1,9 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { type Product, type ProductsSchema } from '../types/productsSchema';
-import { fetchProducts } from '../services/fetchProducts';
-import { fetchPopularProducts } from '../services/fetchPopularProducts';
+import { fetchProducts } from '../services/products/fetchProducts';
+import { fetchPopularProducts } from '../services/popularProducts/fetchPopularProducts';
+import { fetchCategory } from '../services/products/fetchActiveCategory';
+import { type Category } from 'entities/categories/model/types/category';
 
 const initialState: ProductsSchema = {
   isLoading: false,
@@ -9,6 +11,7 @@ const initialState: ProductsSchema = {
   products: [],
   popularProducts: [],
   categoryId: undefined,
+  activeCategory: '',
   _inited: false
 };
 
@@ -16,8 +19,11 @@ export const productsSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    setCategory: (state, action) => {
+    setCategoryId: (state, action) => {
       state.categoryId = action.payload;
+    },
+    setActiveCategory: (state, action) => {
+      state.activeCategory = action.payload;
     },
     initState: (state) => {
       state._inited = true;
@@ -45,6 +51,19 @@ export const productsSlice = createSlice({
       state.popularProducts = action.payload;
     });
     builder.addCase(fetchPopularProducts.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    });
+    builder.addCase(fetchCategory.pending, (state, action) => {
+      state.isLoading = true;
+      state.error = undefined;
+    });
+    builder.addCase(fetchCategory.fulfilled, (state, action: PayloadAction<Category>) => {
+      state.isLoading = false;
+      state.activeCategory = action.payload.title;
+      console.log('set active cat', action.payload.title);
+    });
+    builder.addCase(fetchCategory.rejected, (state, action) => {
       state.isLoading = false;
       state.error = action.payload;
     });

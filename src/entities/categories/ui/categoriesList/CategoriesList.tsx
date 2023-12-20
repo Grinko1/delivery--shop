@@ -32,8 +32,9 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
     setCurCat(null);
   };
   const saveCategory = useCallback(
-    (id: number) => {
-      dispatch(productsActions.setCategory(id));
+    (id: number, title?: string) => {
+      dispatch(productsActions.setCategoryId(id));
+      dispatch(productsActions.setActiveCategory(title));
     },
     [dispatch]
   );
@@ -63,7 +64,7 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
                 key={item.id}
                 className={cls.catLink}
                 onClick={() => {
-                  saveCategory(item.id);
+                  saveCategory(item.id, item.title);
                 }}
               >
                 {item.title}

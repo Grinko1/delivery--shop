@@ -1,0 +1,10 @@
+.ProductsPageHeader {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  .back {
+    border: 1px solid #96d496;
+    padding: 2px 5px;
+  }
+}

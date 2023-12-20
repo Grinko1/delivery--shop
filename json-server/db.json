@@ -215,6 +215,24 @@
       "weigth": "1л"
     },
     {
+      "id": 11,
+      "name": "Сок ДОБРЫЙ",
+      "categoryId": 9,
+      "title": "title title",
+      "price": 100,
+      "img": "https://static.insales-cdn.com/r/BC5BsYq1tu4/rs:fit:600:600:1/plain/images/products/1/7882/766435018/large_import_files_32_32f36cda-714e-4c86-b80c-45226a06fd41_6a62016d-38a9-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1л"
+    },
+    {
+      "id": 12,
+      "name": "Сок ПАЛПИ",
+      "categoryId": 9,
+      "title": "title title",
+      "price": 110,
+      "img": "https://static.insales-cdn.com/r/qd60WVljVAI/rs:fit:600:600:1/plain/images/products/1/7240/766434376/large_import_files_7e_7e2aeb57-7aea-11e9-a9d5-0025901517d9_3d9d9bff-38a9-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "0.5л"
+    },
+    {
       "id": 2,
       "name": "МАКАРОНЫ МАКФА",
       "categoryId": 7,
@@ -224,6 +242,42 @@
       "weigth": "400г"
     },
     {
+      "id": 7,
+      "name": "ВЕРМИШЕЛЬ МАКФА",
+      "categoryId": 7,
+      "title": "title title",
+      "price": 100,
+      "img": "https://static.insales-cdn.com/r/8x2MT2VQehU/rs:fit:600:600:1/plain/images/products/1/5244/766432380/large_import_files_41_4186fb09-6bd4-4e8f-a2d3-ccb9ea4f52b5_58567daa-38a4-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "400г"
+    },
+    {
+      "id": 8,
+      "name": "БАНТИКИ МАКФА",
+      "categoryId": 7,
+      "title": "title title",
+      "price": 88,
+      "img": "https://static.insales-cdn.com/r/vzp92ikNYwU/rs:fit:600:600:1/plain/images/products/1/2390/766413142/large_import_files_63_635922f3-0873-47b7-a556-0362f490c805_58567da7-38a4-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "400г"
+    },
+    {
+      "id": 9,
+      "name": "КРУПА УВЕЛКА ",
+      "categoryId": 6,
+      "title": "title title",
+      "price": 180,
+      "img": "https://static.insales-cdn.com/r/lg08yMV6Uok/rs:fit:600:600:1/plain/images/products/1/4172/766439500/large_import_files_53_5329ee67-b4c4-11e9-9458-ac1f6bbb189e_254befe4-3e33-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "450г"
+    },
+    {
+      "id": 10,
+      "name": "ЧЕЧЕВИЦА МИСТРАЛЬ",
+      "categoryId": 6,
+      "title": "title title",
+      "price": 180,
+      "img": "https://static.insales-cdn.com/r/TqfG5kd6Czk/rs:fit:600:600:1/plain/images/products/1/1535/766428671/large_import_files_80_80584d73-841d-435a-93f1-cf39ca31007b_53b4e85b-ad09-11ed-9df1-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "450г"
+    },
+    {
       "id": 3,
       "name": "Кофе арабика",
       "categoryId": 15,
@@ -231,6 +285,24 @@
       "price": 700,
       "img": "https://static.insales-cdn.com/r/jrMuNhNVx68/rs:fit:600:600:1/plain/images/products/1/1888/766412640/large_import_files_9c_9c03edb4-07f4-11e8-a9a4-002590c824e2_525702f2-f3ab-11ed-9dfa-0cc47aeb3cd9.jpeg@webp",
       "weigth": "250гр"
+    },
+    {
+      "id": 13,
+      "name": "КОФЕ ТУДЕЙ ",
+      "categoryId": 15,
+      "title": "title title",
+      "price": 500,
+      "img": "https://static.insales-cdn.com/r/hWiHUmTsWug/rs:fit:600:600:1/plain/images/products/1/4276/766431412/large_import_files_3e_3e703b7b-e50f-4cc6-8ae7-930b90ea3ad8_db38f531-2d01-11ee-9dff-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "200гр"
+    },
+    {
+      "id": 14,
+      "name": "ФИЛЕ МИНТАЯ ",
+      "categoryId": 16,
+      "title": "title title",
+      "price": 500,
+      "img": "https://static.insales-cdn.com/r/HduB-jhqRpA/rs:fit:600:600:1/plain/images/products/1/2467/766429603/large_import_files_8a_8ab3021b-7ac6-4d02-bbfe-d7b7817bdb62_9b1a204d-4f85-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг"
     },
     {
       "id": 4,
@@ -251,6 +323,24 @@
       "weigth": "1л"
     },
     {
+      "id": 15,
+      "name": "ВОДА МИНЕРАЛЬНАЯ",
+      "categoryId": 8,
+      "title": "title title",
+      "price": 70,
+      "img": "https://static.insales-cdn.com/r/krk49WSPuU8/rs:fit:600:600:1/plain/images/products/1/6221/766425165/large_import_files_ad_adef283e-298c-43c0-adc3-2d05fe9fd995_2044204d-247b-11ee-9dff-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "0.5л"
+    },
+    {
+      "id": 16,
+      "name": "ВИНОГРАД ЧЕРНЫЙ",
+      "categoryId": 11,
+      "title": "title title",
+      "price": 70,
+      "img": "https://static.insales-cdn.com/r/fVsVIXZM_NA/rs:fit:600:600:1/plain/images/products/1/429/766419373/large_import_files_16_16843298-1f26-11eb-b32f-002590c62f23_4e0ee5be-6c96-11ed-9de8-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг"
+    },
+    {
       "id": 6,
       "name": "ПОМИДОРЫ ЧЕРРИ",
       "categoryId": 10,
@@ -258,6 +348,24 @@
       "price": 300,
       "img": "https://static.insales-cdn.com/r/2OEiwecwDyk/rs:fit:600:600:1/plain/images/products/1/5886/766424830/large_import_files_1f_1f04ee7a-e04c-4ec4-ac61-352efbf49179_dbe59a15-8014-11ed-9dee-0cc47aeb3cd9.jpeg@webp",
       "weigth": "1кг"
+    },
+    {
+      "id": 17,
+      "name": "КЛЮКВА С/М",
+      "categoryId": 12,
+      "title": "title title",
+      "price": 580,
+      "img": "https://static.insales-cdn.com/r/BKrNjcI8VTY/rs:fit:600:600:1/plain/images/products/1/7899/766418651/large_import_files_99_99a34951-766f-400c-8720-8f93ec06481f_6a4a0449-38a1-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "1кг"
+    },
+    {
+      "id": 18,
+      "name": "ЧАЙ ТЕСС ЛАЙМ",
+      "categoryId": 14,
+      "title": "title title",
+      "price": 95,
+      "img": "https://static.insales-cdn.com/r/50PXEkJbPtI/rs:fit:600:600:1/plain/images/products/1/7919/766426863/large_import_files_dd_dd5bc9f4-3814-4170-a925-a88d2c18bbc9_df792087-38a4-11ed-9de7-0cc47aeb3cd9.jpeg@webp",
+      "weigth": "50г"
     }
   ],
   "articles": [

@@ -10,6 +10,7 @@ import { Help } from 'pages/Help/Help';
 import { ArticleDetails } from 'entities/articles/ui/articleList/ArticleDetails';
 import { CatalogPage } from 'pages/CatalogPage/ui/CatalogPage';
 import { ProductsPage } from 'pages/ProductsPage';
+import { ProductDetailPage } from 'pages/ProductDetailPage';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/article/:id" element={<ArticleDetails />} />
           <Route path="/catalog" element={<CatalogPage />} />
           <Route path="/products/:title" element={<ProductsPage />} />
+          <Route path="product/:id" element={<ProductDetailPage />} />
         </Routes>
         <Footer />
       </Suspense>
