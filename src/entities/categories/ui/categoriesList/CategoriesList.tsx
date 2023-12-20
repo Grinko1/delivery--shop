@@ -32,8 +32,8 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
     setCurCat(null);
   };
   const saveCategory = useCallback(
-    (id: number, link: string) => {
-      dispatch(productsActions.setCategory({ id, link }));
+    (id: number) => {
+      dispatch(productsActions.setCategory(id));
     },
     [dispatch]
   );
@@ -41,12 +41,8 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
     <div onMouseLeave={handleCloseSubcategory}>
       <div className={classNames(cls.CategoriesList, {}, [className])}>
         {categories?.map((cat) => (
-          <Link
-            to={`/products/${cat.link}`}
+          <div
             className={cls.category}
-            onClick={() => {
-              saveCategory(cat.id, cat.link);
-            }}
             key={cat.id}
             onMouseEnter={(e) => {
               handleShowSubcategory(cat, e);
@@ -54,7 +50,7 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
           >
             <img src={cat.img} alt="" className={cls.img} />
             {cat.title}
-          </Link>
+          </div>
         ))}
       </div>
       {currentCat?.subcategory && (
@@ -67,7 +63,7 @@ export const CategoriesList = memo((props: CategoriesListProps) => {
                 key={item.id}
                 className={cls.catLink}
                 onClick={() => {
-                  saveCategory(item.id, item.link);
+                  saveCategory(item.id);
                 }}
               >
                 {item.title}

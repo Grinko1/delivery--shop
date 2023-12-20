@@ -4,19 +4,17 @@ import { type Product } from '../types/productsSchema';
 import { getActiveCategory } from '../selectors/getProducts';
 import { addQueryParams } from 'shared/lib/hooks/addQuaryParams/addQuaryParams';
 
-export const fetchProducts = createAsyncThunk<Product[], string, ThunkConfig<string>>(
+export const fetchProducts = createAsyncThunk<Product[], void, ThunkConfig<string>>(
   'products/fetchProducts',
-  async (category, { extra, rejectWithValue, getState }) => {
+  async (_, { extra, rejectWithValue, getState }) => {
     const cat = getActiveCategory(getState());
-    console.log(cat, 'cat in fetch');
     try {
       addQueryParams({
-        category: cat?.title,
-        categoryId: String(cat?.id)
+        categoryId: String(cat)
       });
       const response = await extra.api.get<Product[]>('/products', {
         params: {
-          categoryId: cat?.id
+          categoryId: cat
         }
       });
 

@@ -12,9 +12,7 @@ export interface ProductsSchema {
   isLoading: boolean;
   error?: string;
   products: Product[];
+  popularProducts: Product[];
   _inited: boolean;
-  category?: {
-    id: number;
-    title: string;
-  };
+  categoryId?: number;
 }
