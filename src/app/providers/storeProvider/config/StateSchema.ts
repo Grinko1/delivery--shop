@@ -9,6 +9,7 @@ import {
 import { type AxiosInstance } from 'axios';
 import { type CategoriesSchema } from 'entities/categories';
 import { type PromotionalSchema, type ProductsSchema } from 'entities/products';
+import { type CartSchema } from 'features/Cart';
 import { type ProductSchema } from 'pages/ProductDetailPage';
 
 export interface StateSchema {
@@ -16,6 +17,7 @@ export interface StateSchema {
   categories: CategoriesSchema;
   products: ProductsSchema;
   product: ProductSchema;
+  cart: CartSchema;
   // counter: CounterSchema;
   // user: UserSchema;
   // ui: UISchema;

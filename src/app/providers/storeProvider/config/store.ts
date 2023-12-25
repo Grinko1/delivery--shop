@@ -6,6 +6,7 @@ import { $api } from 'shared/api/api';
 import { categoriesReducer } from 'entities/categories';
 import { productsReducer, promotionalReducer } from 'entities/products';
 import { productReducer } from 'pages/ProductDetailPage';
+import { CartReducer } from 'features/Cart';
 
 export function createReduxStore (initialState?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) {
   const rootReducer: ReducersMapObject<StateSchema> = {
@@ -13,7 +14,8 @@ export function createReduxStore (initialState?: StateSchema, asyncReducers?: Re
     promotional: promotionalReducer,
     categories: categoriesReducer,
     products: productsReducer,
-    product: productReducer
+    product: productReducer,
+    cart: CartReducer
     // counter: counterReducer,
     // user: userReducer,
     // ui: uiReducer

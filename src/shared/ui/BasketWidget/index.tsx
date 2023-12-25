@@ -2,29 +2,29 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import BasketIcon from 'shared/assets/icons/BasketIcon.svg';
 import styles from './styles.module.scss';
 import { Icon } from '../Icon/Icon';
+import { useSelector } from 'react-redux';
+import { getCartTotal, getCartTotalQtt } from 'features/Cart';
+import { Link } from 'react-router-dom';
 
 interface basketWidgetProps {
   className?: string;
 }
 
 const BasketWidget = ({ className }: basketWidgetProps) => {
-  // const { push } = useRouter();
+  const totalQuantity = useSelector(getCartTotalQtt);
+  const totalPrice = useSelector(getCartTotal);
   return (
-    <div
-      className={classNames(styles['basket-wrapper'], {}, [className])}
-      onClick={() => {
-        console.log('/basket');
-      }}
-    >
+    <Link to="/cart" className={classNames(styles['basket-wrapper'], {}, [className])}>
       <div className={styles['basket-counter']}>
-        <span className={styles['basket-counter-badge']}>12</span>
+        <span className={styles['basket-counter-badge']}>{totalQuantity}</span>
         <Icon Svg={BasketIcon} className={styles['basket-icon']} />
       </div>
 
       <div className={styles['basket-sum']}>
-        10 154 <span>₽</span>
+        {totalPrice}
+        <span>₽</span>
       </div>
-    </div>
+    </Link>
   );
 };
 
