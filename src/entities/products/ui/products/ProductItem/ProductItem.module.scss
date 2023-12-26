@@ -1,5 +1,5 @@
 .ProductItem {
-  height: 340px;
+  height: 350px;
   width: 260px;
   border: 1px solid green;
   padding-bottom: 20px;
@@ -34,6 +34,26 @@
       border-radius: 16px;
       font-weight: 600;
       color: green;
+    }
+
+    .qttInCart {
+      position: absolute;
+      bottom: 47px;
+      right: 3px;
+      border-radius: 50%;
+      border: 1px solid var(--accent-color);
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--accent-color);
+    }
+    .toBasket {
+      position: absolute;
+      right: 10px;
+      bottom: 28px;
+      width: 30px;
+      height: 23px;
     }
   }
 }
