@@ -6,6 +6,7 @@ export interface Product {
   price: number;
   img: string;
   weigth: string;
+  newPrice?: number;
 }
 
 export interface ProductsSchema {
@@ -14,6 +15,7 @@ export interface ProductsSchema {
   products: Product[];
   activeCategory: string;
   popularProducts: Product[];
+  promoProducts: Product[];
   _inited: boolean;
   categoryId?: number;
 }

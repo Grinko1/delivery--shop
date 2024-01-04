@@ -5,10 +5,11 @@ import { useSelector } from 'react-redux';
 import { getCartProducts } from 'features/Cart/model/selectors/getCartProducts';
 import { CartProductList } from '../CartProductList/CartProductList';
 import { CartTotalWidget } from '../CartTotalWidget/CartTotalWidget';
-import { PromotionalProduct } from 'entities/products';
+import { Products, getPromoProducts } from 'entities/products';
 import { Container } from 'shared/ui/Container/Container';
 import { Link } from 'react-router-dom';
 import ArrowBack from 'shared/ui/ArrowBack';
+import { getProductIsLoading } from 'pages/ProductDetailPage/model/selectors/getProduct';
 
 interface CartProps {
   className?: string;
@@ -17,6 +18,8 @@ interface CartProps {
 export const Cart = memo((props: CartProps) => {
   const { className } = props;
   const products = useSelector(getCartProducts);
+  const isLoading = useSelector(getProductIsLoading);
+  const promoProducts = useSelector(getPromoProducts);
   return (
     <div className={classNames(cls.Cart, {}, [className])}>
       {products.length !== 0
@@ -39,7 +42,7 @@ export const Cart = memo((props: CartProps) => {
             <p> Корзина пуста</p>
           </div>
 
-          <PromotionalProduct />
+          <Products title="Акции" products={promoProducts} isLoading={isLoading} />
         </Container>
           )}
     </div>

@@ -3,11 +3,12 @@ import cls from './ProductsPage.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import {
   Products,
-  PromotionalProduct,
+  fetchPopularProducts,
   getPopularProducts,
   getProducts,
   getProductsError,
   getProductsIsLoading,
+  getPromoProducts,
   initProductList
 } from 'entities/products';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
@@ -29,6 +30,10 @@ export const ProductsPage = memo((props: ProductsPageProps) => {
   }, [dispatch, searchParams]);
   const products = useSelector(getProducts);
   const popularProducts = useSelector(getPopularProducts);
+  const promoProducts = useSelector(getPromoProducts);
+  if (!popularProducts.length) {
+    dispatch(fetchPopularProducts());
+  }
   const isLoading = useSelector(getProductsIsLoading);
   const error = useSelector(getProductsError);
   return (
@@ -38,7 +43,7 @@ export const ProductsPage = memo((props: ProductsPageProps) => {
         <Products products={products} isLoading={isLoading} error={error} />
       </Container>
       <Container>
-        <PromotionalProduct />
+        <Products title="Акции" products={promoProducts} isLoading={isLoading} />
       </Container>
       <Container>
         <Products title="Часто заказывают" wrap products={popularProducts} isLoading={isLoading} error={error} />

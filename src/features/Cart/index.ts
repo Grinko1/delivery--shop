@@ -1,3 +1,5 @@
+export { getIdsInCart } from './model/selectors/getCartProducts';
+
 export { getCartTotal, getCartTotalQtt, getCartProducts } from './model/selectors/getCartProducts';
 
 export { CartActions } from './model/slices/CartSlice';

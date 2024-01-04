@@ -1,5 +1,5 @@
 import { type StateSchema } from 'app/providers/storeProvider/config/StateSchema';
 
-export const getPromoProducts = (state: StateSchema) => state.promotional.products;
-export const getPromoIsLoading = (state: StateSchema) => state.promotional.isLoading;
-export const getPromoError = (state: StateSchema) => state.promotional.error ?? null;
+export const getPromoProducts = (state: StateSchema) => state.products.promoProducts;
+export const getPromoIsLoading = (state: StateSchema) => state.products.isLoading;
+export const getPromoError = (state: StateSchema) => state.products.error ?? null;

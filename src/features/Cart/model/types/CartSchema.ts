@@ -7,4 +7,5 @@ export interface CartSchema {
   products: ProductInCart[];
   total: number;
   totalQuantity: number;
+  ids: number[];
 }

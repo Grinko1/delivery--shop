@@ -27,7 +27,7 @@ export const ProductDetailPage = memo((props: ProductDetailPageProps) => {
     return <div>Failed to load </div>;
   }
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className={cls.ProductDetailPage}>Loading...</div>;
   }
   if (error) {
     return <div>Failed to load </div>;

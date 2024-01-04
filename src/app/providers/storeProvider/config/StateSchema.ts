@@ -8,12 +8,11 @@ import {
 } from '@reduxjs/toolkit';
 import { type AxiosInstance } from 'axios';
 import { type CategoriesSchema } from 'entities/categories';
-import { type PromotionalSchema, type ProductsSchema } from 'entities/products';
+import { type ProductsSchema } from 'entities/products';
 import { type CartSchema } from 'features/Cart';
 import { type ProductSchema } from 'pages/ProductDetailPage';
 
 export interface StateSchema {
-  promotional: PromotionalSchema;
   categories: CategoriesSchema;
   products: ProductsSchema;
   product: ProductSchema;

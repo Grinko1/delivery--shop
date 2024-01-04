@@ -4,14 +4,13 @@ import { type StateSchema } from './StateSchema';
 import { createReducerManager } from './reducerManager';
 import { $api } from 'shared/api/api';
 import { categoriesReducer } from 'entities/categories';
-import { productsReducer, promotionalReducer } from 'entities/products';
+import { productsReducer } from 'entities/products';
 import { productReducer } from 'pages/ProductDetailPage';
 import { CartReducer } from 'features/Cart';
 
 export function createReduxStore (initialState?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) {
   const rootReducer: ReducersMapObject<StateSchema> = {
     ...asyncReducers,
-    promotional: promotionalReducer,
     categories: categoriesReducer,
     products: productsReducer,
     product: productReducer,

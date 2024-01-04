@@ -28,6 +28,14 @@
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    gap: 20px;
+    .oldPrice {
+      background: #e8e2e2;
+      padding: 5px 20px;
+      border-radius: 16px;
+      text-decoration: line-through;
+      text-decoration-color: red;
+    }
     .newPrice {
       padding: 3px 20px;
       border: 2px solid grey;
@@ -38,10 +46,8 @@
 
     .qttInCart {
       position: absolute;
-      bottom: 47px;
+      bottom: 41px;
       right: 3px;
-      border-radius: 50%;
-      border: 1px solid var(--accent-color);
       width: 20px;
       height: 20px;
       text-align: center;

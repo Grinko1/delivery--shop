@@ -1,16 +1,14 @@
-import mockImage from './MokkImage1.png';
 import { Slider } from 'shared/ui/Slider/Slider';
 
 const TopSlider = () => {
   return (
     <Slider
       images={[
-        'https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp',
-        mockImage,
-        'https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp',
-        mockImage,
-        'https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp'
+        'https://static.insales-cdn.com/files/1/5801/32659113/original/1496%D1%85400.jpg',
+
+        'https://static.insales-cdn.com/files/1/843/32432971/original/баннер_1496х400.jpg'
       ]}
+      widthPercent={90}
     />
   );
 };

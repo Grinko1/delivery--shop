@@ -3,12 +3,12 @@ import BonusProgram from 'entities/bonusProgram';
 import { PopularCategory } from 'entities/categories';
 import {
   Products,
-  PromotionalProduct,
   fetchPopularProducts,
   getPopularProducts,
   getProductsError,
   getProductsIsLoading
 } from 'entities/products';
+import { getPromoProducts } from 'entities/products/model/selectors/getPromoProducts/getPromoProducts';
 import { RecipePreview } from 'entities/recipes';
 import TopSlider from 'features/TopSlider';
 import { useEffect } from 'react';
@@ -20,8 +20,9 @@ import { PageWrapper } from 'widgets/PageWrapper/PageWrapper';
 const MainPage = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(fetchPopularProducts(''));
+    dispatch(fetchPopularProducts());
   }, [dispatch]);
+  const promoProducts = useSelector(getPromoProducts);
   const products = useSelector(getPopularProducts);
   const isLoading = useSelector(getProductsIsLoading);
   const error = useSelector(getProductsError);
@@ -30,8 +31,7 @@ const MainPage = () => {
       <TopSlider />
       <PopularCategory />
       <Container>
-        <PromotionalProduct />
-
+        <Products title="Акции" products={promoProducts} isLoading={isLoading} error={error} />
         <Products title="Часто заказывают" products={products} isLoading={isLoading} error={error} />
       </Container>
 

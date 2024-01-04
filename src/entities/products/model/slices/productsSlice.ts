@@ -10,6 +10,7 @@ const initialState: ProductsSchema = {
   error: '',
   products: [],
   popularProducts: [],
+  promoProducts: [],
   categoryId: undefined,
   activeCategory: '',
   _inited: false
@@ -49,6 +50,11 @@ export const productsSlice = createSlice({
     builder.addCase(fetchPopularProducts.fulfilled, (state, action: PayloadAction<Product[]>) => {
       state.isLoading = false;
       state.popularProducts = action.payload;
+      console.log(
+        action.payload.filter((item) => Boolean(item.newPrice)),
+        'filter'
+      );
+      state.promoProducts = action.payload.filter((item) => Boolean(item.newPrice));
     });
     builder.addCase(fetchPopularProducts.rejected, (state, action) => {
       state.isLoading = false;

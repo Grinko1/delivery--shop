@@ -4,7 +4,8 @@ import { type ProductInCart, type CartSchema } from '../types/CartSchema';
 const initialState: CartSchema = {
   products: [],
   total: 0,
-  totalQuantity: 0
+  totalQuantity: 0,
+  ids: []
 };
 
 export const CartSlice = createSlice({
@@ -17,8 +18,8 @@ export const CartSlice = createSlice({
         state.products.push(action.payload);
         state.total += action.payload.price;
         state.totalQuantity += 1;
+        state.ids.push(action.payload.id);
       } else {
-        console.log(state.products[existIndex].qtt);
         state.products[existIndex].qtt += 1;
         state.total += action.payload.price;
         state.totalQuantity += 1;
@@ -33,6 +34,7 @@ export const CartSlice = createSlice({
           state.totalQuantity -= 1;
         } else {
           state.products.splice(existIndex, 1);
+          state.ids = state.ids.filter((id) => id !== action.payload.id);
           state.total -= action.payload.price;
           state.totalQuantity -= 1;
         }
